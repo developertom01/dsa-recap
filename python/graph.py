@@ -8,7 +8,7 @@ class Graph:
         self.graph[u].append(v)
     
     def bfs(self,s):
-        visited = [False] * (len(list(self.graph.keys())))
+        visited = [False] * (max(list(self.graph.keys())) + 1)
         queue  = []
 
         queue.append(s)
